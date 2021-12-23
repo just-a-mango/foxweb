@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>F O X - More</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta 
+     name='viewport' 
+     content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' 
+    />
+<style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            border: none;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #0e1119;
+            
+        }
+
+        .easysyntax {
+            font-family: 'poppins', sans-serif;
+            text-transform: uppercase;
+            position: absolute;
+            left: 100px;
+            top: 150px;
+            color: #ffffff
+        }
+        .easysyntaxsmol {
+            animation: fadetextin 0.5s;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            text-transform: lowercase;
+            color: #ffffff;
+            resize: none;
+        }
+        .fadetextmore {
+            animation: fadetextin 3s;
+        }
+        .center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            resize: none;
+        }
+        .button-28 {
+            appearance: none;
+            background-color: transparent;
+            border: 2px solid #1A1A1A;
+            border-radius: 15px;
+            box-sizing: border-box;
+            color: #3B3B3B;
+            cursor: pointer;
+            display: inline-block;
+            font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+            font-size: 16px;
+            font-weight: 600;
+            line-height: normal;
+            margin: 0;
+            position: absolute;
+            top: 60%;
+            height: 60px;
+            width: 0;
+            outline: none;
+            padding: 16px 24px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            width: 15%;
+            will-change: transform;
+        }
+
+        .button-28:disabled {
+            pointer-events: none;
+        }
+
+        .button-28:hover {
+            color: #fff;
+            background-color: #1A1A1A;
+            box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+            transform: translateY(-2px);
+        }
+
+        .button-28:active {
+            box-shadow: none;
+            transform: translateY(0);
+        }
+
+        .textfadein {
+            animation: fadetextin 0.5s
+        }
+
+        @keyframes fadetextin {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+        }
+
+        .bg {
+            position: fixed;
+            top: -50%;
+            left: -50%;
+            right: -50%;
+            bottom: -50%;
+            width: 200%;
+            height: 200vh;
+            background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+            background-repeat: repeat;
+            animation: bg-animation .2s infinite;
+            opacity: .25;
+            visibility: visible;
+        }
+
+        @keyframes bg-animation {
+            0% { transform: translate(0,0) }
+            10% { transform: translate(-5%,-5%) }
+            20% { transform: translate(-10%,5%) }
+            30% { transform: translate(5%,-10%) }
+            40% { transform: translate(-5%,15%) }
+            50% { transform: translate(-10%,5%) }
+            60% { transform: translate(15%,0) }
+            70% { transform: translate(0,10%) }
+            80% { transform: translate(-15%,0) }
+            90% { transform: translate(10%,5%) }
+            100% { transform: translate(5%,0) }
+        }
+
+        .effect-underline:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            display: inline-block;
+            height: 1em;
+            width: 80%;
+            border-bottom: 1px solid;
+            margin-top: 10px;
+            opacity: 0;
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s, transform 0.35s;
+            -webkit-transform: scale(0,1);
+            transform: scale(0,1);
+        }
+
+        .effect-underline:hover:after {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+
+        .effect-underline-nextgen:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            display: inline-block;
+            height: 27px;
+            width: 27%;
+            border-bottom: 1px solid;
+            margin-top: 10px;
+            opacity: 0;
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s, transform 0.35s;
+            -webkit-transform: scale(0,1);
+            transform: scale(0,1);
+        }
+
+        .effect-underline-nextgen:hover:after {
+            opacity: 1;
+            -webkit-transform: scale(1);
+        }
+        .effect-underline-nextgen:hover {
+            text-shadow: 1px 4px 15px rgba(0,0,0,0.6);
+        }
+
+        .effect-nextgen {
+            opacity: 0.65;
+            transition: 0.5s;
+        }
+        .effect-nextgen:hover {
+            opacity: 1
+        }
+    
+</style>
+</head>
+<body>
+    <div class="bg"></div>
+        <div class="container">
+            <h1 class="easysyntaxsmol">
+                <div class="center">
+                    <div>
+                        <span style="color: #5865F2" class="effect-nextgen"><span class="effect-underline-nextgen">next-gen</span></span> programming language
+                    </div>
+                    <div class="easysyntaxsmol">
+                        <div class="effect-underline">
+                            Simpler for developers.
+                        </div>
+                    </div>
+                    <div class="fadetextmore">
+                        Faster to learn.
+                    </div>
+                </div>
+            </h1>
+            <button class="button-28" style="align-self: center;">
+                here's why
+            </button>
+        </div>
+    </div>
+</body>
+</html>

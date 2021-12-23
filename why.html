@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F O X</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #0e1119;
+        }
+
+        .div-title {
+            background: #0094ff;
+            color: white;
+            width: 100%;
+            position: relative;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        @media (max-width: 420px) {
+            .button-84 {
+                height: 200px;
+            }
+        }
+
+        .easier-syntax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 1;
+            color: #5865F2;
+            position: absolute;
+            text-align: center;
+            margin-top: 0;
+            width: 100%;
+            opacity: 0.65;
+            transition: 0.5s;
+            font-family: "Segoe UI";
+            font-style: italic;
+        }
+
+        .easier-syntax:hover {
+            opacity: 1;
+            text-shadow: 1px 4px 15px rgba(0,0,0,0.6);
+        }
+
+        .code {
+            font-family: "Terminal New";
+        }
+
+        html, body {margin: 0; height: 100%;}
+    </style>
+    <script src="baffle.min.js"></script>
+</head>
+
+<body>
+    <h1 class="easier-syntax" style="font-size: 100px;">
+        F O X
+    </h1>
+    <div class="container">
+        <code class="code">
+            declare my_var = ask(Enter a number: )<br>
+            if (my_var = 5) {<br>
+            print(The number is 5!)<br>
+            }<br>
+            else {<br>
+            print(The number is not 5!)<br>
+            }<br>
+        </code>
+    </div>
+    <div class="container">
+        <h1>
+            Hello 
+        </h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F O X</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            border: none;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #0e1119;
+            
+        }
+        
+        .text-animation {
+            color: #5865F2;
+            font-size: 80px;
+            opacity: 0.85;
+            letter-spacing: .5rem;
+            text-transform: uppercase;
+            font-family: 'poppins', sans-serif;
+            transition: 0.45s;
+            
+        }
+        .text-animation:hover {
+            opacity: 1;
+            text-shadow: 1px 4px 15px rgba(0,0,0,0.6);
+            /* -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+            -webkit-mask-size: 200%;
+            animation: shine 2s infinite; */
+        }
+        .button-84 {
+            animation: fadebuttonin 1.25s;
+            animation-play-state: running;
+            align-items: center;
+            background-color: initial;
+            background-image: linear-gradient(#67707a, #25292e);
+            border-radius: 8px;
+            border-width: 0;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, .1), 0 3px 6px rgba(0, 0, 0, .05);
+            box-sizing: border-box;
+            color: #fff;
+            cursor: pointer;
+            display: inline-flex;
+            flex-direction: column;
+            font-family: expo-brand-demi, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-size: 18px;
+            height: 52px;
+            justify-content: center;
+            line-height: 1;
+            margin: 0;
+            outline: none;
+            overflow: hidden;
+            padding: 0 32px;
+            text-align: center;
+            text-decoration: none;
+            transform: translate3d(0, 0, 0);
+            transition: all 150ms;
+            vertical-align: baseline;
+            white-space: nowrap;
+        }
+        
+        @keyframes fadebuttonin {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .button-84:hover {
+            box-shadow: rgba(0, 1, 0, .2) 0 2px 8px;
+            opacity: 0.75;
+        }
+        
+        .button-84:active {
+            box-shadow: #D6D6E7 0 3px 7px inset;
+            transform: translateY(2px);
+        }
+        
+        .button-84:focus {
+            box-shadow: #f0f0ff 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #f0f0ff 0 -3px 0 inset;
+        }
+        
+        .center {
+            margin: 0;
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        
+        @media (max-width: 420px) {
+            .button-84 {
+                height: 200px;
+            }
+        }
+
+        a.effect-shine:hover {
+            -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+            -webkit-mask-size: 200%;
+            animation: shine 2s infinite;
+        }
+
+        @-webkit-keyframes shine {
+            from {
+                -webkit-mask-position: 150%;
+            }
+            
+            to {
+                -webkit-mask-position: -50%;
+            }
+        }
+
+        html, body {margin: 0; height: 100%; overflow: hidden}
+    </style>
+    <script src="baffle.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="text-animation">
+            <div class="effect-shine">
+                F O X
+            </div>
+        </div>
+        <div class="center">
+            <button class="button-84" onclick="window.location.href='more.html';">
+                Learn More
+            </button>
+        </div>
+    </div>
+    <script>
+        const text = baffle('.text-animation');
+        text.set({
+            characters: '▒░█ ▒█▒▒> ▒>░> <░> ░▒/▓ <<▒▓',
+            speed: 120
+        });
+
+        text.start();
+        text.reveal(1000);
+    </script>
+</body>
+
+</html>
