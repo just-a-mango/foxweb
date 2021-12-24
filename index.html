@@ -46,6 +46,21 @@
             color: #38BDF8;
         }
 
+        .source {
+            background-color: transparent;
+            border: 0;
+            font-family: FiraMedium;
+            font-size: larger;
+            position: fixed;
+            top: 2.1%;
+            left: 92.4%;
+            color: white;
+            transition: 0.2s;
+        }
+        .source:hover {
+            color: #a7a7a7;
+        }
+
         .code {
             width: 542;
             height: 536;
@@ -56,7 +71,8 @@
     <body class="background">
         <div style="vertical-align: top; font-family: FiraMedium; color: white; margin: 15px;">
             <p style="font-size: larger;">🦊Fox</p>
-            <button class="docs" onclick="window.open('https://github.com/just-a-mango/foxweb/wiki','_blank')">Docs</button>
+            <button class="source" style="left: 95%;" onclick="window.open('https://github.com/just-a-mango/fox','_blank')">Source</button>
+            <button class="docs" style="left: 91%;" onclick="window.open('https://github.com/just-a-mango/foxweb/wiki','_blank')">Docs</button>
         </div>
         <div>
             <h1 style="position: fixed; top: 35%; left: 50%; transform: translate(-50%, -50%); font-size:66px; color: white;">Fox</h1>
