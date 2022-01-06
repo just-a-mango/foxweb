@@ -4,7 +4,6 @@
 <head>
     <meta charset="utf-8" name="Fox Language" content="Get started with Fox">
     <title>🦊 FOX 🦊</title>
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 </head>
 <style>
     @font-face {
@@ -45,7 +44,7 @@
     
     .background {
         opacity: 1;
-        background: url(https://i.imgur.com/OPlmCEb.png) no-repeat center center fixed;
+        background: url(https://i.imgur.com/MwpXXz1.jpg) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -111,7 +110,7 @@
     }
     
     .source:hover {
-        color: #7a7a7a;
+        color: #000000;
     }
     
     .donate {
@@ -149,23 +148,11 @@
         height: 536;
         background-color: rgba(177, 177, 177, 1);
     }
-
-    .glass-rectangle {
-        /* From https://css.glass */
-        background: rgba(255, 255, 255, 0.2);
-        border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
-        border: 1px solid rgba(255, 255, 255, 0);
-        align-items: center;
-        transition-duration: 2s;
-    }
 </style>
 
 <body class="background">
     <div>
-        <div style="vertical-align: top; font-family: FiraMedium; color: white; margin: 15px; height: 100vh">
+        <div style="vertical-align: top; font-family: FiraMedium; color: white; margin: 15px;">
             <p style="font-size: larger; position: fixed; top: 0%;">🦊Fox</p>
             <button class="source" style="left: 95%;" onclick="window.open('https://github.com/just-a-mango/fox','_blank')">Source</button>
             <button class="donate" style="left: 85.75%;" onclick="window.open('https://ko-fi.com/justamango','_blank')">Donate</button>
@@ -177,31 +164,7 @@
             <h4 style="position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%); font-size:medium; color: white; font-family: 'Poppins', sans-serif;">✨The next generation of programming languages✨</h4>
             <button class="get-started" onclick="window.open('https://github.com/just-a-mango/foxweb/wiki/Download-&-Installation','_blank')">🚀 Get Started 🚀</button>
         </div>
-        <div id="glassyntax" style="height: 100vh">
-            <h3 style="font-family: FiraMedium; color: white; font-size: 20px; text-shadow: 0px 0px 20px #000000;" data-aos="fade-in">Readable syntax</h3>
-            <div class="glass-rectangle" style="width:579px;height:611px" data-aos="fade-in">
-                <p id="syntax_show_off" style="font-family: FiraMedium;" offset-position="right"></p>
-                <script>
-                var i = 0;
-                var txt = 'declare my_variable = my_value';
-                var speed = 50;
-                step = 0
-                function typeWriter() {
-                    if (i < txt.length) {
-                        document.getElementById("syntax_show_off").innerHTML += txt.charAt(i);
-                        i++;
-                        setTimeout(typeWriter, speed);
-                    }
-                }
-                typeWriter();
-                </script>
-            </div>
-        </div>
     </div>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
 </body>
 
 </html>
