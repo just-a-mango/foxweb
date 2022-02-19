@@ -1,4 +1,4 @@
-<h1 align="center">Mango Web - <a href="https://just-a-mango.github.io/mangoweb/">https://just-a-mango.github.io/mangoweb/</a></h1>
+<h1 align="center" href="https://just-a-mango.github.io/mangoweb/">Mango Web</h1>
 
 <p align="center">
     <br/>
