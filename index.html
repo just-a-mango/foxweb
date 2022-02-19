@@ -37,229 +37,215 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;700&display=swap');
-
-body {
-	background: url("./background.png") no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+body{
+    background:url(background.png) no-repeat center center fixed;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
 }
-body, html {
-	text-align: center;
-	align-items:center;
-	animation: fadeIn 0.3s linear;
+body,html{
+    text-align:center;
+    align-items:center;
+    animation:fadeIn .3s linear;
 }
-@keyframes fadeIn {
-	from {
-		opacity: 0%;
-	}
-	to {
-		opacity: 100%;
-	}
+@keyframes fadeIn{
+    from{
+        opacity:0
+    }
+    to{
+        opacity:100%
+    }
 }
-.mango-navbar {
-	color: white;
-	font-family: "Fira Sans", sans-serif;
-	font-size: larger;
-	letter-spacing: 1px;
-	font-weight: normal;
-	cursor: pointer;
-	margin-top: 2vh;
+.mango-navbar{
+    color:#fff;
+    font-family:"Fira Sans",sans-serif;
+    font-size:larger;
+    letter-spacing:1px;
+    font-weight:400;
+    cursor:pointer;
+    margin-top:2vh
 }
-.navbar {
-	position: fixed;
-	display: flex;
-	-webkit-box-align: center;
-	margin-left: 30%;
+.navbar{
+    position:fixed;
+    display:flex;
+    -webkit-box-align:center;
+    margin-left:30%
 }
-.donate {
-	color: white;
-	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-	margin-left: 5vw;
-	font-weight: 500;
-	cursor: pointer;
-	transition: 0.25s;
+.donate{
+    color:#fff;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    margin-left:5vw;
+    font-weight:500;
+    cursor:pointer;
+    transition:.25s
 }
-.donate:hover {
-	color: #f266ff;
-	text-decoration: underline;
+.donate:hover{
+    color:#f266ff;
+    text-decoration:underline
 }
-.docs {
-	color: white;
-	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-	margin-left: 1vw;
-	font-weight: 500;
-	cursor: pointer;
-	transition: 0.25s;
+.docs{
+    color:#fff;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    margin-left:1vw;
+    font-weight:500;
+    cursor:pointer;
+    transition:.25s
 }
-.docs:hover {
-	color: #6ce2ff;
-	text-decoration: underline;
+.docs:hover{
+    color:#6ce2ff;
+    text-decoration:underline
 }
-.source {
-	color: white;
-	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-	margin-left: 1vw;
-	font-weight: 500;
-	cursor: pointer;
-	transition: 0.25s;
+.source{
+    color:#fff;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    margin-left:1vw;
+    font-weight:500;
+    cursor:pointer;
+    transition:.25s
 }
-.source:hover {
-	color: #ff7053;
-	text-decoration: underline;
+.source:hover{
+    color:#ff7053;
+    text-decoration:underline
 }
-.content {
-	height: 100vh;
+.content{
+    height:100vh
 }
-.works-section {
-	color: white;
+.works-section{
+    color:#fff
 }
-.project {
-	width: 300px;
-	height: 200px;
-	background: rgba(255, 255, 255, 0.2);
-	border-radius: 16px;
-	box-shadow:
-	0 1px 1px hsl(0deg 0% 0% / 0.075),
-	0 2px 2px hsl(0deg 0% 0% / 0.075),
-	0 4px 4px hsl(0deg 0% 0% / 0.075),
-	0 8px 8px hsl(0deg 0% 0% / 0.075),
-	0 16px 16px hsl(0deg 0% 0% / 0.075)
-	;
-	cursor: none;
-	backdrop-filter: blur(5px);
-	-webkit-backdrop-filter: blur(5px);
-	border: 1px solid rgba(255, 255, 255, 0);
-	align-items: center;
-	transition: 0.5s;
-	display: inline-block !important;
-	transition: 0.2s;
-	cursor: none;
+.project{
+    width:300px;
+    height:200px;
+    background:rgba(255,255,255,.2);
+    border-radius:16px;
+    box-shadow:0 1px 1px hsl(0deg 0% 0% / .075),0 2px 2px hsl(0deg 0% 0% / .075),0 4px 4px hsl(0deg 0% 0% / .075),0 8px 8px hsl(0deg 0% 0% / .075),0 16px 16px hsl(0deg 0% 0% / .075);
+    cursor:none;
+    backdrop-filter:blur(5px);
+    -webkit-backdrop-filter:blur(5px);
+    border:1px solid rgba(255,255,255,0);
+    align-items:center;
+    transition:.5s;
+    display:inline-block!important;
+    transition:.2s;
+    cursor:none
 }
-.project:hover {
-	box-shadow:
-	0 1px 1px hsl(0deg 0% 0% / 0.075),
-	0 2px 2px hsl(0deg 0% 0% / 0.075),
-	0 4px 4px hsl(0deg 0% 0% / 0.075),
-	0 8px 8px hsl(0deg 0% 0% / 0.075),
-	0 16px 16px hsl(0deg 0% 0% / 0.075),
-	0 32px 32px hsl(0deg 0% 0% / 0.075)
-	;
+.project:hover{
+    box-shadow:0 1px 1px hsl(0deg 0% 0% / .075),0 2px 2px hsl(0deg 0% 0% / .075),0 4px 4px hsl(0deg 0% 0% / .075),0 8px 8px hsl(0deg 0% 0% / .075),0 16px 16px hsl(0deg 0% 0% / .075),0 32px 32px hsl(0deg 0% 0% / .075);
 }
-.margin-on-right {
-	margin-right: 20px;
+.margin-on-right{
+    margin-right:20px;
 }
-.margin-on-left {
-	margin-left: 65px;
+.margin-on-left{
+    margin-left:65px;
 }
-.margin-on-top {
-	margin-top: 40px;
+.margin-on-top{
+    margin-top:40px;
 }
-.why-mango {
-	color: white;
-	font-size:34px; 
-	font-family: 'Poppins', sans-serif;
+.why-mango{
+    color:#fff;
+    font-size:34px;
+    font-family:Poppins,sans-serif
 }
-@media (max-width: 700px) {
-	.margin-on-right {
-		margin-right: 0px;
-	}
-	.margin-on-left {
-		margin-left: 0px;
-	}
-	.margin-on-top {
-		margin-top: 0px;
-	}
-	.project {
-		margin-top: 40px;
-	}
-	.why-mango {
-		font-size: 27px;
-	}
-	.mango-args {
-		margin-top: 120px;
-	}
+@media (max-width:700px){
+    .margin-on-right{
+        margin-right:0
+    }
+    .margin-on-left{
+        margin-left:0
+    }
+    .margin-on-top{
+        margin-top:0
+    }
+    .project{
+        margin-top:40px
+    }
+    .why-mango{
+        font-size:27px
+    }
+    .mango-args{
+        margin-top:120px
+    }
 }
-.big-image {
-	border-radius: 50%;
+.big-image{
+    border-radius:50%
 }
-.maybe-dark {
-	color: white;
+.maybe-dark{
+    color:#fff
 }
-.da-mail {
-	color: white;
+.da-mail{
+    color:#fff
 }
-.mango-title {
-	font-size:66px; 
-	color: white; 
-	font-family: 'Poppins', sans-serif;
-	padding: 0;
-	margin: 0;
+.mango-title{
+    font-size:66px;
+    color:#fff;
+    font-family:Poppins,sans-serif;
+    padding:0;
+    margin:0
 }
-.mango-pitch {
-	font-size:medium; 
-	color: white; 
-	font-family: 'Poppins', sans-serif;
+.mango-pitch{
+    font-size:medium;
+    color:#fff;
+    font-family:Poppins,sans-serif
 }
-@media (prefers-color-scheme: white) {
-	body,html {
-		background-color: white;
-	}
-	.just-a-mango {
-		color: black;
-	}
-	.docs {
-		color: black;
-	}
-	.donate {
-		color: black;
-	}
-	.description {
-		color: black;
-	}
-	.title {
-		color: black;
-	}
-	.why-mango {
-		color: black;
-	}
-	.maybe-dark {
-		color: black;
-	}
-	.da-mail {
-		color: rgb(0, 30, 95);
-	}
+@media (prefers-color-scheme:white){
+    body,html{
+        background-color:#fff
+    }
+    .just-a-mango{
+        color:#000
+    }
+    .docs{
+        color:#000
+    }
+    .donate{
+        color:#000
+    }
+    .description{
+        color:#000
+    }
+    .title{
+        color:#000
+    }
+    .why-mango{
+        color:#000
+    }
+    .maybe-dark{
+        color:#000
+    }
+    .da-mail{
+        color:#001e5f
+    }
 }
-.get-started-button {
-	cursor: pointer;
-	background-color: #4CC3FF;
-	font-family: "Fira Sans", sans-serif;
-	font-weight: bold;
-	border-radius: 8px;
-	border: 0px;
-	height: 48px;
-	width: 160px;
-	transition: 0.25s;
-	letter-spacing: 1.25px;
+.get-started-button{
+    cursor:pointer;
+    background-color:#4cc3ff;
+    font-family:"Fira Sans",sans-serif;
+    font-weight:700;
+    border-radius:8px;
+    border:0;
+    height:48px;
+    width:160px;
+    transition:.25s;
+    letter-spacing:1.25px;
 }
-.get-started-button:hover {
-	background-color: #009bdd;
+.get-started-button:hover{
+    background-color:#009bdd
 }
-.inline-project-rect {
-	display: inline-block;
+.inline-project-rect{
+    display:inline-block
 }
-.mango-args {
-	font-size:24px; 
-	font-family: 'Poppins', sans-serif;
-	font-weight: bold;
+.mango-args{
+    font-size:24px;
+    font-family:Poppins,sans-serif;
+    font-weight:700;
 }
-.mango-args-description {
-	padding-left: 15px;
-	padding-right: 15px;
-	color: black;
-	font-family: 'Poppins', sans-serif;
-	font-weight: 400;
+.mango-args-description{
+    padding-left:15px;
+    padding-right:15px;
+    color:#000;
+    font-family:Poppins,sans-serif;
+    font-weight:400
 }
 </style>
 <body>
